@@ -1,0 +1,105 @@
+
+
+body {
+    font-family: 'Indie Flower', cursive;
+}
+
+.postit {
+    display: grid;
+    gap: 5px;
+    grid-template-areas: "box1 box2 box3 box4" 
+                          "box5 box6 box7 box8";
+    background-color: grey ;
+    width: 90%;
+    margin: 0 auto ;
+    padding: 20px;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: repeat(4, 25%);
+    justify-content:baseline;
+    box-sizing: border-box;
+
+
+}
+
+.postit div {
+    /* width: 135px;     
+    height: 115px; */
+    padding: 2em;
+    margin: 0.75em;
+    box-sizing: border-box;
+}
+
+.postit div h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.postit div p {
+    padding: 5px;
+}
+
+div.box1 {
+    grid-area: box1;
+    background-color: rgba(220, 228, 185, 0.879);
+    transform: rotate(349deg);
+
+}
+
+div.box2 {
+    grid-area: box2;
+    background-color: rgba(174, 225, 112, 0.879);
+    transform: rotate(5deg);
+
+}
+
+div.box3 {
+    grid-area: box3;
+    background-color: rgb(152, 143, 212);
+    transform: rotate(339deg);
+
+}
+
+div.box4 {
+    grid-area: box4;
+    background-color: rgba(174, 225, 112, 0.879);
+    transform: rotate(5deg);
+
+}
+
+div.box5 {
+    grid-area: box5;
+    background-color: rgba(220, 228, 185, 0.879);
+    transform: rotate(349deg);
+
+}
+
+div.box6 {
+    grid-area: box6;
+    background-color: rgb(152, 143, 212);
+    transform: rotate(339deg);
+
+}
+
+div.box7 {
+    grid-area: box7;
+    background-color: rgba(220, 228, 185, 0.879);
+    transform: rotate(349deg);
+
+}
+
+div.box8 {
+    grid-area: box8;
+    background-color: rgba(174, 225, 112, 0.879);
+    transform: rotate(5deg);
+
+}
+
+.postit div {
+    transition-property:transform, box-shadow;
+    transition-duration: 2s;}
+
+.postit div:hover {
+    transform: scale(1.5);
+    box-shadow: 3px 3px 3px #060606;
+    z-index: 1;
+}
